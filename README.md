@@ -10,7 +10,6 @@
 
 <h3>Build with:</h3>
 
-» Tailwind CSS <br>
 » React JS
 
 <h2>Screenshots of the Project 📸</h2>
