@@ -1,0 +1,48 @@
+.container {
+  margin: 0 auto;
+  max-width: 133rem;
+  padding: 0 2.5rem;
+}
+
+.booking-banner {
+  background-image: url(../images/banners/book-banner.png);
+  display: flex;
+  height: 20rem;
+  margin-top: 7rem;
+  position: relative;
+  width: 100%;
+}
+
+.bb-overlay {
+  background-color: #2d2d2d;
+  height: 100%;
+  opacity: 0.89;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.text-content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  gap: 5rem;
+  height: 20rem;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+.text-content h2 {
+  font-size: 3.2rem;
+}
+
+.text-content span {
+  align-items: center;
+  color: #ff4d30;
+  display: flex;
+  font-size: 2.7rem;
+  gap: 1rem;
+  white-space: nowrap;
+}

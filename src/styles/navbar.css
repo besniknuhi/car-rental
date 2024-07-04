@@ -1,0 +1,146 @@
+.navbar {
+  align-items: center;
+  background-color: initial;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  left: 0;
+  margin: 0 auto;
+  max-width: 133rem;
+  padding: 2.7rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.navbar-img {
+  width: 14.5rem;
+}
+
+.navbar-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.1rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: #010103;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar-buttons {
+  align-items: center;
+  display: flex;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  gap: 2.5rem;
+}
+
+.navbar-buttons a {
+  text-decoration: none;
+}
+
+.navbar-signin {
+  color: #010103;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-register {
+  background-color: #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  color: #fff;
+  padding: 1.5rem 3rem;
+  transition: all 0.3s;
+}
+
+.mobile-hamb {
+  font-size: 2.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mobile-hamb:hover {
+  color: #ff4d30;
+}
+
+.mobile-navbar {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 999999;
+}
+
+.mobile-navbar-close {
+  font-size: 3rem;
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mobile-navbar-close:hover {
+  color: #ff4d30;
+}
+
+.mobile-navbar-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 2.3rem;
+  gap: 3rem;
+  text-align: center;
+}
+
+.mobile-navbar-links li a {
+  text-decoration: none;
+  color: #010103;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.mobile-navbar-links li a:hover {
+  color: #ff4d30;
+}
+
+.open-nav {
+  left: 0;
+}
+
+@media (max-width: 1000px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-hamb {
+    display: flex;
+  }
+
+  .navbar-buttons {
+    display: none;
+  }
+}

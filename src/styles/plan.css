@@ -1,0 +1,82 @@
+.plan-section {
+  background-color: #fff;
+  padding: 5.3rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 133rem;
+  padding: 0 2.5rem;
+}
+.plan-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-container-title {
+  color: #010103;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plan-container-title h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.plan-container-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.2rem;
+  margin: 1.3rem 0 3rem;
+}
+
+.plan-container-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 3.7rem;
+  padding: 0 3rem;
+}
+
+.plan-container-box {
+  padding: 1rem 6rem;
+  text-align: center;
+}
+
+.plan-container-box img {
+  height: auto;
+  width: 17rem;
+}
+
+.plan-container-box h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.plan-container-box p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.43;
+}
+
+@media (max-width: 1050px) {
+  .plan-container-boxes {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .plan-container-boxes {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .plan-container-box {
+    padding: 1rem 1rem;
+  }
+}

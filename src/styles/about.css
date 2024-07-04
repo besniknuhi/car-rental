@@ -1,0 +1,148 @@
+.container {
+  margin: 0 auto;
+  max-width: 133rem;
+  padding: 0 2.5rem;
+}
+
+.bg {
+  background-image: url(../images/hero/heroes-bg.png);
+  height: 41rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.bg-overlay {
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.92);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-text {
+  color: #010103;
+  display: flex;
+  flex-direction: column;
+  height: 41rem;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.bg-text h3 {
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.bg-text p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.bg-text p a {
+  text-decoration: none;
+  color: #010103;
+}
+
+.about-main {
+  align-items: center;
+  display: flex;
+  gap: 5rem;
+  margin: 10rem auto;
+  max-width: 90rem;
+}
+
+.about-main-img {
+  width: 43rem;
+  height: 43rem;
+}
+
+.about-main-text {
+  color: #010103;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main-text h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about-main-text h2 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+}
+
+.about-main-text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.about-main-icons {
+  grid-gap: 4rem;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main-box img {
+  width: 7rem;
+  height: 5rem;
+}
+
+.about-main-box span {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.about-main-box span h4 {
+  font-size: 4.6rem;
+}
+
+@media screen and (max-width: 960px) {
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 49rem;
+    text-align: center;
+  }
+  .about-main-img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-main {
+    max-width: 100%;
+  }
+
+  .about-main-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-main-box {
+    align-items: center;
+  }
+
+  span {
+    text-align: center;
+    flex-direction: column;
+  }
+}
